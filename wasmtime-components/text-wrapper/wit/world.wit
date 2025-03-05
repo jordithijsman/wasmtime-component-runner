@@ -1,0 +1,10 @@
+package jthijsma:text-package;
+
+interface text-interface {
+    hello-world : func() -> u32;
+}
+
+world text-world {
+    export text-interface;
+    import jthijsma:random-package/random-interface;
+}

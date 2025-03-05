@@ -1,0 +1,25 @@
+[package]
+name = "command"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.component.target]
+path = "wit"
+
+[dependencies]
+wit-bindgen-rt = { version = "0.39.0", features = ["bitflags"] }
+
+[profile.release]
+codegen-units = 1
+opt-level = "s"
+debug = false
+strip = true
+lto = true
+
+[package.metadata.component]
+package = "component:command"
+
+[package.metadata.component.target.dependencies]
+"jthijsma:text-package" = { package = "jthijsma:text-package", version = "0.1.0", registry = "wa.dev" }
+
+[package.metadata.component.dependencies]

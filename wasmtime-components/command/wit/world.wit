@@ -1,0 +1,5 @@
+package jthijsma:command-package;
+
+world command-world {
+    import jthijsma:text-package/text-interface;
+}

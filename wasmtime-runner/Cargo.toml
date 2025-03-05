@@ -1,0 +1,8 @@
+[package]
+name = "wasmtime-runner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasmtime = "30.0.2"
+wasmtime-wasi = "30.0.2"

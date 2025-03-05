@@ -1,0 +1,9 @@
+package jthijsma:random-package;
+
+interface random-interface{
+    random: func() -> u32;
+}
+
+world random-world {
+    export random-interface;
+}

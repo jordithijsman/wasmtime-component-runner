@@ -1,0 +1,13 @@
+package jthijsma:composition
+
+let r = jthijsma:random-package {};
+
+let text_wrapper = new jthijsma:text-package {
+    jthijsma:random-package/random-interface: r.random-interface
+};
+
+let command = new jthijsma:command-package {
+    jthijsma:text-package/text-interface: text_wrapper.text-interface
+};
+
+export text_wrapper.text-interface;
